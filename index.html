@@ -4,17 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esbugalhado</title>
-    <script type="module" src="main.js"></script>
-</head>
+    <link rel="stylesheet" type="text/css" href="index.css"></head>
 <body>
     <main>
-    <h1>Jogo Esbugalhado!</h1>   
-    <p> Para jogar começar a jogar, aperte o botão abaixo!</p>
-    <button>
-        <span> Começar</span>
-    </button>
+    <h1>Jogo Esbugalhado!</h1>
+    <section>   
+        <p> Para jogar começar a jogar, aperte o botão abaixo!</p>
+        <button>
+            <span> Começar</span>
+        </button>
+    </section>
+    <section>
+        <p> Selecione a coluna e linha para posicionar o número</p>
+        <div class="jogar-dado">
+            <form name="entrada">
+                <div class="col">
+                    <label>Linha :</label>
+                    <input type="number" name="coluna" value="1" min="0" max="2" step="1"/> 
+                </div>
+                <div class="lin">
+                    <label>Coluna:</label>
+                    <input type="number" name="linha" value="1" min="0" max="2" step="1"/>
+                </div>
+                    <button type="submit" name="enviar"> Selecionar </button>
+            </form>
+            <div class="tabuleiros">
+                <div class = "tabuleiro1">
+                    <div class="place">
+                        <label id="00a">1</label>
+                    </div>
+                    <div class="place">
+                        <label id="01a">2</label>
+                    </div>
+                    <div class="place">
+                        <label id="02a">3</label>
+                    </div>
+                    <div class="place">
+                        <label id ="10a">4</label>
+                    </div>
+
+                    <div class="place">
+                        <label id="11a">5</label>
+                    </div>
+                    <div class="place">
+                        <label id="12a">6</label>
+                    </div>
+                    <div class="place">
+                        <label id="20a">7</label>
+                    </div>
+                    <div class="place">
+                        <label id="21a">8</label>
+                    </div>
+                    <div class="place">
+                        <label id="22a">9</label>
+                    </div>
+                </div>
+                <div class = "tabuleiro2">
+                    <div class="place">
+                        <label id="00a">1</label>
+                    </div>
+                    <div class="place">
+                        <label id="01a">2</label>
+                    </div>
+                    <div class="place">
+                        <label id="02a">3</label>
+                    </div>
+                    <div class="place">
+                        <label id ="10a">4</label>
+                    </div>
+
+                    <div class="place">
+                        <label id="11a">5</label>
+                    </div>
+                    <div class="place">
+                        <label id="12a">6</label>
+                    </div>
+                    <div class="place">
+                        <label id="20a">7</label>
+                    </div>
+                    <div class="place">
+                        <label id="21a">8</label>
+                    </div>
+                    <div class="place">
+                        <label id="22a">9</label>
+                    </div>
+                </div>
+            </div>
+            <div class ="dado">
+                <p> Número sorteado:</p>
+                <label>6 </label>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="scores">
+            <div class="Player"> 
+                Score Jogador: 
+                <label> 12</label>
+            </div>
+            <div class="bot-score">
+                Score Máquina: 
+                <label> 12</label>
+            </div>
+        </div>
+    </section>
 </main>
 
-    
+    <script type="module" src="main.js"></script>
+
 </body>
 </html>

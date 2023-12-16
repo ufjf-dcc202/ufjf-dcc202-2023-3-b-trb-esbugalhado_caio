@@ -1,0 +1,50 @@
+div.jogar-dado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+
+}
+.tabuleiro1, .tabuleiro2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    height: 20vh;
+    width: 40vw;
+    margin-top: 2vh;
+    border: 1px solid  chocolate;
+
+
+}
+.place{
+    display: flex;
+    background-color: darksalmon;
+    margin: 2%;
+    justify-content: center;
+    
+}
+.tabuleiros{
+    display: flex;
+    flex-direction: column;    
+
+}
+.scores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4%;
+    background-color: darkslateblue;
+    color:azure;
+    
+}
