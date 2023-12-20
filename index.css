@@ -4,6 +4,11 @@ div.jogar-dado{
     justify-content: space-around;
 
 }
+.player-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -24,7 +29,6 @@ form{
     width: 40vw;
     margin-top: 2vh;
     border: 1px solid  chocolate;
-
 
 }
 .place{
@@ -47,4 +51,20 @@ form{
     background-color: darkslateblue;
     color:azure;
     
+}
+.hidden{
+    display: none;
+}
+.dialog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.game-score{
+    display: flex;
+    flex-direction: column;
+}
+.restart{
+    margin-left: 47%;
+    background-color: rgb(246, 212, 127);
 }

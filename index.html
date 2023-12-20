@@ -9,104 +9,71 @@
     <main>
     <h1>Jogo Esbugalhado!</h1>
     <section>   
-        <p> Para jogar começar a jogar, aperte o botão abaixo!</p>
-        <button>
+        <p> Para jogar, aperte o botão abaixo!</p>
+        <button id="start">
             <span> Começar</span>
         </button>
     </section>
-    <section>
+    <section id="game-info" class="hidden">
         <p> Selecione a coluna e linha para posicionar o número</p>
         <div class="jogar-dado">
             <form name="entrada">
-                <div class="col">
-                    <label>Linha :</label>
-                    <input type="number" name="coluna" value="1" min="0" max="2" step="1"/> 
-                </div>
                 <div class="lin">
-                    <label>Coluna:</label>
-                    <input type="number" name="linha" value="1" min="0" max="2" step="1"/>
+                    <label>Linha :</label>
+                    <input type="number" name="linha" value="1" min="0" max="2" step="1"/> 
                 </div>
-                    <button type="submit" name="enviar"> Selecionar </button>
+                <div class="col">
+                    <label>Coluna:</label>
+                    <input type="number" name="coluna" value="1" min="0" max="2" step="1"/>
+                </div>
+                <button type="submit" name="enviar"> Selecionar </button>
             </form>
             <div class="tabuleiros">
                 <div class = "tabuleiro1">
-                    <div class="place">
-                        <label id="00a">1</label>
-                    </div>
-                    <div class="place">
-                        <label id="01a">2</label>
-                    </div>
-                    <div class="place">
-                        <label id="02a">3</label>
-                    </div>
-                    <div class="place">
-                        <label id ="10a">4</label>
-                    </div>
-
-                    <div class="place">
-                        <label id="11a">5</label>
-                    </div>
-                    <div class="place">
-                        <label id="12a">6</label>
-                    </div>
-                    <div class="place">
-                        <label id="20a">7</label>
-                    </div>
-                    <div class="place">
-                        <label id="21a">8</label>
-                    </div>
-                    <div class="place">
-                        <label id="22a">9</label>
-                    </div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
                 </div>
                 <div class = "tabuleiro2">
-                    <div class="place">
-                        <label id="00a">1</label>
-                    </div>
-                    <div class="place">
-                        <label id="01a">2</label>
-                    </div>
-                    <div class="place">
-                        <label id="02a">3</label>
-                    </div>
-                    <div class="place">
-                        <label id ="10a">4</label>
-                    </div>
-
-                    <div class="place">
-                        <label id="11a">5</label>
-                    </div>
-                    <div class="place">
-                        <label id="12a">6</label>
-                    </div>
-                    <div class="place">
-                        <label id="20a">7</label>
-                    </div>
-                    <div class="place">
-                        <label id="21a">8</label>
-                    </div>
-                    <div class="place">
-                        <label id="22a">9</label>
-                    </div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
+                    <div class="place">0</div>
                 </div>
             </div>
             <div class ="dado">
                 <p> Número sorteado:</p>
-                <label>6 </label>
+                <label class="n-dado">-</label>
             </div>
         </div>
     </section>
-    <section>
+    <section id="game-score" class="hidden">
         <div class="scores">
-            <div class="Player"> 
+            <div> 
                 Score Jogador: 
-                <label> 12</label>
+                <label class="player-sc"> 0</label>
             </div>
-            <div class="bot-score">
+            <div>
                 Score Máquina: 
-                <label> 12</label>
+                <label class="bot-sc"> 0</label>
             </div>
         </div>
+        <div class="dialog">
+            <p>#</p>
+            <p class="status">Sua vez!</p>
+        </div>
+        <button class="restart">Recomeçar</button>
     </section>
 </main>
 
