@@ -1,4 +1,4 @@
-import { updateScore, numberGenerator, counterOponent, tb1, tb2, checkEnd, showWinner } from "functions.js";
+import { updateScore, numberGenerator, counterOponent, tb1, tb2, checkEnd, showWinner } from "/functions.js";
 let number
 let player = 1
 let bot = 2
